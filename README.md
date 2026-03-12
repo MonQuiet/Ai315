@@ -63,6 +63,7 @@ ai315/
 ├── CONTRIBUTING.md                  # 参与指南
 ├── DISCLAIMER.md                    # 法律声明
 └── README.md                        # 项目主页
+```
 🚀 如何参与 (Contributing)
 ai315 是一场属于全体消费者的自救行动，无论你是否懂代码，都可以加入我们！
 
