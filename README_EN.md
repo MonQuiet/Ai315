@@ -33,7 +33,7 @@ This project adopts a dual-track architecture with equal emphasis on "Documentat
 AI has a high technical threshold and a massive information gap. We rely on crowdsourcing to expose the following egregious behaviors:
 
 * **[Wrapper & False Advertising Blacklist](docs/blacklist.md):** Applications that falsely claim to be "proprietary flagship models" but are actually just wrappers around open-source models, charging exorbitant fees equivalent to true flagship offerings.
-* **[Model "Nerfing" & API Bait-and-Switch Records](docs/api_fraud.md):** Exposing sudden drops in AI intelligence ("nerfing") during use, and API brokers baiting developers with flagship models (like Pro versions) but secretly routing requests to cheaper, lower-tier models (like Flash versions).
+* **[Model "Nerfing" & API Bait-and-Switch Records](docs/api_fraud.md):** Exposing sudden drops in AI intelligence ("nerfing") during use, and API brokers baiting developers with flagship models (like Pro versions) but secretly routing requests to cheaper, lower-tier models (like Flash versions), with an included no-code anti-fraud testing guide.
 * **[Refund Issues & Benefit Shrinkage Exposure](docs/rights_protection.md):**
     * **Small Enterprises:** Exposing small AI API relays that abscond or unreasonably refuse refunds.
     * **Big Tech:** Monitoring and exposing major AI companies that secretly infringe on paid users' rights (e.g., unilaterally reducing promised monthly Token quotas, lowering concurrency limits, or covertly changing billing multipliers without justification).
