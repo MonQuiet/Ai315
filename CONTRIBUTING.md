@@ -8,7 +8,7 @@
 
 **提交流程:**
 
-请前往 [**本项目的 GitHub Issues 页面**](https://github.com/user-repo/Ai315/issues/new) 提交报告，标题格式为 `[避雷] 产品名称 - 侵权类型`，并在正文中附上详细的测试截图或证据链接。审核通过后将合并至下表。
+请前往 [**本项目的 GitHub Issues 页面**](https://github.com/MonQuiet/Ai315/issues/new) 提交报告，标题格式为 `[避雷] 产品名称 - 侵权类型`，并在正文中附上详细的测试截图或证据链接。审核通过后将合并至下表。
 
 ---
 

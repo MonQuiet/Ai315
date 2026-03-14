@@ -40,14 +40,15 @@ AI has a high technical threshold and a massive information gap. We rely on crow
 * **[Privacy Infringement & Dark Patterns](docs/dark_patterns.md):** Exposing predatory clauses that default to using private chats/core code for model training without opt-out options, and "free trial" baits tied to hidden, hard-to-cancel auto-renewals.
 
 ### 2. 🤖 Unmasking the Fake: Anti-Fraud Telegram Bot (`/tools/anti-fraud-bot`)
-Faced with indistinguishable AI content, we provide an out-of-the-box Telegram detection bot.
-* **Hardcore Tech Stack:** Built with Java and the OpenClaw agent framework, perfectly handling complex LLM scheduling and Telegram event routing.
-* **Low Resource Consumption:** Optimized via JVM startup parameters to maintain stable operation and prevent OOM, even in constrained server environments.
-* **One-Click Verification:** Forward suspicious pitches or promotional links directly to the Bot. It will call built-in retrieval skills to cross-reference across the web and quickly output an "AI-generation probability" and risk warning.
+We are building a Telegram detection bot to handle indistinguishable AI content (currently a scaffold/early stage).
+* **Technical direction:** Java + agent framework for complex LLM scheduling and Telegram event routing.
+* **Resource goal:** Stable operation in low-memory environments.
+* **Usage:** A future “one-click verification” flow for suspicious pitches or links.
 
 ### 3. 🔐 Privacy Guardian: Prompt Desensitization Gateway (`/tools/privacy-gateway`)
 When using public LLM services, it is extremely easy to accidentally send code or text containing personal privacy or corporate secrets to the cloud.
-* **Local Proxy Interceptor:** A lightweight middleware service that automatically identifies and masks sensitive information (like names, credentials) before the user's Prompt is sent to the cloud, seamlessly restoring it after the model returns the result.
+* **Planned:** This module is currently in the design stage as a local proxy interceptor.
+* **Core capability:** Automatically identify and mask sensitive information (like names, credentials) before the Prompt goes to the cloud, then restore it after the model returns.
 
 ### 4. ⚖️ Rights Advocacy: AI Consumer Digital Rights Declaration
 * **[AI Consumer Digital Rights Draft](docs/declaration.md):** Advocating for users' "Right to Know," "Right to be Forgotten," and "Right to Reject Automated Decision-Making."
@@ -68,15 +69,19 @@ ai315/
 │   ├── rights_protection.md         # Exposure: Refund scams & benefit shrinkage
 │   ├── dark_patterns.md             # Exposure: Privacy theft & dark patterns
 │   ├── scam_cases.md                # Cases: AI fraud prevention guide
-│   └── declaration.md               # Advocacy: Consumer rights draft
+│   ├── declaration.md               # Advocacy: Consumer rights draft
+│   └── developer_checklist.md       # Developer compliance checklist
 ├── tools/                           # 🛠️ Core Code Zone (Independent Java modules)
 │   ├── anti-fraud-bot/              # Telegram Anti-Fraud Bot
-│   │   ├── src/main/java/...        # OpenClaw logic & Tg listeners
+│   │   ├── src/main/java/...        # Core logic & entry point
 │   │   ├── pom.xml                  # Maven dependencies
 │   │   └── scripts/start.sh         # Production startup script (memory-optimized)
 │   └── privacy-gateway/             # (Planned) Data desensitization proxy
 ├── CONTRIBUTING.md                  # Contribution Guidelines
+├── CODE_OF_CONDUCT.md               # Community code of conduct
 ├── DISCLAIMER.md                    # Legal Disclaimer
+├── LICENSE-DOCS                     # Docs/content license (CC BY-NC-ND 4.0)
+├── SECURITY.md                      # Security policy
 ├── README_EN.md                     # English Homepage
 └── README.md                        # Chinese Homepage
 ```
@@ -92,8 +97,8 @@ Ai315 is a self-rescue movement for all consumers. Whether you know how to code 
 
 This project uses Dual Licensing:
 
-1. **Code Section (`/tools`):** Under the MIT License.
-2. **Content Section (`/docs` and text):** Under the CC BY-NC-ND 4.0 License. You are free to share and educate, but commercial profiteering or tampering with qualitative conclusions is strictly prohibited.
+1. **Code Section (`/tools`):** Under the MIT License. See `LICENSE`.
+2. **Content Section (`/docs` and text):** Under the CC BY-NC-ND 4.0 License. See `LICENSE-DOCS`. You are free to share and educate, but commercial profiteering or tampering with qualitative conclusions is strictly prohibited.
 
 ### ⚠️ Disclaimer
 
